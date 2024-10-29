@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAM Casablanca - Prof. Dr. Abdelaziz Timesli</title>
+    <style>
+        /* Couleurs modernes et typographie */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Conteneur principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        /* Styles de la colonne gauche et droite avec largeur distincte */
+        .left-column {
+            flex: 1; /* Colonne gauche prend 1 part */
+            min-width: 250px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 3; /* Colonne droite prend 3 parts */
+            min-width: 300px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        /* En-tête */
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 30px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        /* Effet d'animation pour le logo */
+        .header img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .header .title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        /* Titres de section */
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        /* Liens et effets au survol */
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #03dac5;
+        }
+
+        /* Boîte pour les sections */
+        .box {
+            background-color: #2b2b2b;
+            border: 1px solid #3d3d3d;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .box:hover {
+            background-color: #333333;
+        }
+
+        /* Style pour les publications */
+        .publication-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #3d3d3d;
+            color: #cfcfcf;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Style du bouton */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0f5bb5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête du site -->
+    <header class="header">
+        <img src="logo.png" alt="Logo ENSAM">
+        <div class="title">Prof. Dr. Abdelaziz Timesli</div>
+    </header>
+
+    <p style="text-align:center; color: #e0e0e0;">
+        Hassan II University of Casablanca · National Higher School of Arts and Crafts of Casablanca
+    </p>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+
+        <!-- Colonne gauche -->
+        <div class="left-column">
+            <h2 class="section-title">Courses</h2>
+            <p>Vibration dynamics</p>
+            <ul>
+                <li><a href="#">Chapter 1</a></li>
+                <li><a href="#">Chapter 2</a></li>
+                <li><a href="#">Chapter 3</a></li>
+                <li><a href="#">Chapter 4</a></li>
+            </ul>
+            <p><a href="#">Numerical modeling using finite elements method</a></p>
+
+            <h2 class="section-title">Exercises</h2>
+            <p>Systems dynamic</p>
+            <ul>
+                <li><a href="#">TD 1</a></li>
+                <li><a href="#">TD 2</a></li>
+                <li><a href="#">TD 3</a></li>
+            </ul>
+
+            <h2 class="section-title">Research Group</h2>
+            <ul>
+                <li>HASSOUNA Saad</li>
+                <li>BOUCHAOUATA Youssef</li>
+            </ul>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right-column">
+            <div class="box">
+                <h2 class="section-title">Research Interests</h2>
+                <ul>
+                    <li>Dynamical systems</li>
+                    <li>Computational mechanics</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2 class="section-title">Contact</h2>
+				<ul>
+					<li>50 Avenue Nile Sidi Othman, Casablanca 20670
+					<li>Phone: (+212) 6 54 70 71 72
+					<li>Email: <a href="mailto:ABDELAZIZ.TIMESLI@univh2c.ma">ABDELAZIZ.TIMESLI@univh2c.ma</a></p>
+                <a class="button" href="https://orcid.org/0000-0001-8226-4293" target="_blank">View ORCID Profile</a>
+            </div>
+
+            <div class="box">
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-item">
+                    <a href="#">Analysis of inhomogeneous structures...</a>
+                    <p>Computers and Mathematics with Applications, 2024</p>
+                </div>
+                <div class="publication-item">
+                    <a href="#">A meshfree TSDT-based approach for modeling...</a>
+                    <p>Mathematical Modeling and Computing, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
